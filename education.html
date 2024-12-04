@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('cb.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        header {
+            background: linear-gradient(45deg, magenta, purple);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 105, 180, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: magenta;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: magenta;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-container p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: lightgray;
+        }
+
+        footer {
+            background: linear-gradient(45deg, purple, magenta);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer marquee {
+            font-size: 14px;
+            color: yellow;
+        }
+
+        #backToTop {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            display: none;
+            background: magenta;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        #backToTop:hover {
+            transform: scale(1.1);
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MY HOMEPAGE</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">Family</a>
+    </nav>
+
+    <div class="main">
+        <table>
+            <tr>
+                <th>School/Institution</th>
+                <th>Experience</th>
+            </tr>
+            <tr>
+                <td>SK Kerayong</td>
+                <td>
+                    <ul>
+                        <li>From standard 1 until 6</li>
+                        <li>UPSR Result = 4A 2B</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Shah Pekan</td>
+                <td>
+                    <ul>
+                        <li>Only Tingkatan 1</li>
+                        <li>Transferred shortly after certain circumstances</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>SMK Seri Bera</td>
+                <td>
+                    <ul>
+                        <li>Tingkatan 2 until 3</li>
+                        <li>PT3 Result =</li>
+                        <li>Transferred due to no interested subject if continued to Tingkatan 4</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>SMK Mengkarak</td>
+                <td>
+                    <ul>
+                        <li>From Tingkatan 4 to 5</li>
+                        <li>SPM Result = 6A 1B+ 1D</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>UITM Johor Segamat</td>
+                <td>
+                    <ul>
+                        <li>Current institution</li>
+                        <li>Joined a club but did not continue due to unfortunate reasons</li>
+                        <li>Results are confidential</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <div class="image-container" style="display: flex; align-items: center; gap: 20px; margin-top: 20px; justify-content: flex-start;">
+            <img src="example.jpeg" alt="Education Journey" style="width: 400px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+            <div style="background: rgba(0, 0, 0, 0.6); padding: 15px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); color: white; max-width: 300px;">
+                <p style="margin: 0; font-size: 16px; text-align: left;">
+                    This image represents my coursework during form 5 for the subject Sport Sciences. We have to do emergency dressing to the leg.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <footer>
+        <marquee>"Copyright by Muse"</marquee>
+    </footer>
+
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
